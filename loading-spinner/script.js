@@ -24,7 +24,7 @@ async function loadUsers() {
 
     const users = await response.json();
 
-    // Testing ke liye 1 second delay
+  
     await new Promise((resolve) => {
       setTimeout(resolve, 1000);
     });

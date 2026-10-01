@@ -13,19 +13,19 @@ const emptyMessage = document.getElementById("emptyMessage");
 let users = [];
 
 
-// Fetch Users button
+
 fetchBtn.addEventListener("click", fetchUsers);
 
 
-// Retry button
+
 retryBtn.addEventListener("click", fetchUsers);
 
 
-// Search users
+
 searchInput.addEventListener("input", searchUsers);
 
 
-// Fetch users from API
+
 async function fetchUsers() {
 
   usersContainer.innerHTML = "";
@@ -41,20 +41,20 @@ async function fetchUsers() {
     );
 
 
-    // Check API response
+  
     if (!response.ok) {
       throw new Error("Failed to fetch users");
     }
 
 
-    // Convert response into JSON
+   
     users = await response.json();
 
 
     loading.textContent = "";
 
 
-    // Empty state
+    
     if (users.length === 0) {
 
       emptyMessage.textContent = "No users found.";
@@ -63,7 +63,7 @@ async function fetchUsers() {
     }
 
 
-    // Display users
+   
     displayUsers(users);
 
   } catch (err) {
@@ -80,7 +80,7 @@ async function fetchUsers() {
 }
 
 
-// Display users
+
 function displayUsers(userList) {
 
   usersContainer.innerHTML = "";
@@ -138,7 +138,7 @@ function displayUsers(userList) {
 }
 
 
-// Search users
+
 function searchUsers() {
 
   const searchValue = searchInput.value.toLowerCase();

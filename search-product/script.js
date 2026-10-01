@@ -5,7 +5,7 @@ const emptyMessage = document.getElementById("emptyMessage");
 let products = [];
 
 
-// Fetch products
+
 async function fetchProducts() {
 
   try {
@@ -32,7 +32,7 @@ async function fetchProducts() {
 }
 
 
-// Display products
+
 function displayProducts(productList) {
 
   productsContainer.innerHTML = "";
@@ -76,7 +76,7 @@ function displayProducts(productList) {
 }
 
 
-// Search products
+
 searchInput.addEventListener("input", () => {
 
   const searchValue =
@@ -97,5 +97,4 @@ searchInput.addEventListener("input", () => {
 });
 
 
-// Start
 fetchProducts();

@@ -18,7 +18,7 @@ let currentPage = 1;
 const productsPerPage = 4;
 
 
-// Fetch products
+
 async function fetchProducts() {
 
   try {
@@ -51,7 +51,7 @@ async function fetchProducts() {
 }
 
 
-// Display products
+
 function displayProducts() {
 
   productsContainer.innerHTML = "";
@@ -101,7 +101,7 @@ function displayProducts() {
 }
 
 
-// Create pagination buttons
+
 function createPagination() {
 
   pagination.innerHTML = "";
@@ -113,7 +113,7 @@ function createPagination() {
     );
 
 
-  // Previous button
+
   const previousButton =
     document.createElement("button");
 
@@ -140,7 +140,6 @@ function createPagination() {
   pagination.appendChild(previousButton);
 
 
-  // Page buttons
   for (
     let page = 1;
     page <= totalPages;
@@ -178,7 +177,7 @@ function createPagination() {
   }
 
 
-  // Next button
+  
   const nextButton =
     document.createElement("button");
 
@@ -207,5 +206,5 @@ function createPagination() {
 }
 
 
-// Start
+
 fetchProducts();

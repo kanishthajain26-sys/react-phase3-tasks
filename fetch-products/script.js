@@ -15,23 +15,22 @@ const emptyMessage = document.getElementById("emptyMessage");
 let products = [];
 
 
-// Fetch button
+
 fetchBtn.addEventListener("click", fetchProducts);
 
 
-// Retry button
+
 retryBtn.addEventListener("click", fetchProducts);
 
 
-// Search
+
 searchInput.addEventListener("input", filterProducts);
 
 
-// Category filter
+
 categoryFilter.addEventListener("change", filterProducts);
 
 
-// Fetch products from API
 async function fetchProducts() {
 
   productsContainer.innerHTML = "";
@@ -84,7 +83,7 @@ async function fetchProducts() {
 }
 
 
-// Create category options
+
 function createCategories() {
 
   categoryFilter.innerHTML =
@@ -108,7 +107,7 @@ function createCategories() {
 }
 
 
-// Display products
+
 function displayProducts(productList) {
 
   productsContainer.innerHTML = "";
@@ -162,7 +161,7 @@ function displayProducts(productList) {
 }
 
 
-// Search + category filter
+
 function filterProducts() {
 
   const searchValue =

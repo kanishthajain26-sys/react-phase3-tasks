@@ -14,7 +14,6 @@ const emptyMessage = document.getElementById("emptyMessage");
 let products = [];
 
 
-// Events
 categoryFilter.addEventListener("change", filterProducts);
 priceFilter.addEventListener("change", filterProducts);
 
@@ -22,7 +21,7 @@ resetBtn.addEventListener("click", resetFilters);
 retryBtn.addEventListener("click", fetchProducts);
 
 
-// Fetch Products
+
 async function fetchProducts() {
 
   loading.textContent = "Loading products...";
@@ -62,7 +61,7 @@ async function fetchProducts() {
 }
 
 
-// Create Categories
+
 function createCategories() {
 
   categoryFilter.innerHTML = `
@@ -93,7 +92,7 @@ function createCategories() {
 }
 
 
-// Filter Products
+
 function filterProducts() {
 
   const selectedCategory = categoryFilter.value;
@@ -102,13 +101,13 @@ function filterProducts() {
 
   const filteredProducts = products.filter((product) => {
 
-    // Category condition
+  
     const categoryMatch =
       selectedCategory === "all" ||
       product.category === selectedCategory;
 
 
-    // Price condition
+  
     let priceMatch = true;
 
 
@@ -150,7 +149,7 @@ function filterProducts() {
 }
 
 
-// Display Products
+
 function displayProducts(productList) {
 
   productsContainer.innerHTML = "";
@@ -197,7 +196,7 @@ function displayProducts(productList) {
 }
 
 
-// Reset
+
 function resetFilters() {
 
   categoryFilter.value = "all";
@@ -207,5 +206,5 @@ function resetFilters() {
 }
 
 
-// Start
+
 fetchProducts();

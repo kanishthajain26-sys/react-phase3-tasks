@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fetch Products</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🛍️ Product Store</h1>
+    <p class="subtitle">Explore products fetched from an API</p>
+
+    <div class="controls">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+      >
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+
+      <button id="fetchBtn">Fetch Products</button>
+
+    </div>
+
+    <p id="loading"></p>
+
+    <div id="errorBox" class="error-box">
+      <p id="error"></p>
+      <button id="retryBtn">Retry</button>
+    </div>
+
+    <p id="emptyMessage"></p>
+
+    <div id="productsContainer" class="products-container"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

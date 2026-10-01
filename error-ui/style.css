@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-card {
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.error-card h1 {
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.error-card p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#successMessage {
+  display: none;
+}

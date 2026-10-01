@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Filter Products</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🛍️ Filter Products</h1>
+    <p class="subtitle">Find products using filters</p>
+
+    <div class="filters">
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="0-50">Under $50</option>
+        <option value="50-100">$50 - $100</option>
+        <option value="100-200">$100 - $200</option>
+        <option value="200">Above $200</option>
+      </select>
+
+      <button id="resetBtn">Reset Filters</button>
+
+    </div>
+
+    <p id="loading"></p>
+
+    <div id="errorBox">
+      <p id="errorMessage"></p>
+      <button id="retryBtn">Try Again</button>
+    </div>
+
+    <p id="emptyMessage"></p>
+
+    <div
+      id="productsContainer"
+      class="products-container">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
